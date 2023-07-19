@@ -2,7 +2,7 @@
 #+EXPORT_FILE_NAME: index.html
 
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
-
+#+OPTIONS: \n
 
 #+ATTR_HTML: :width 100%
 [[./dragon_knight.png]]
@@ -11,6 +11,7 @@
 Chronicles of heroes is a collection and clearification of rules, for playing with chronicles of darkness rules in a high fantasy setting.
 
 * Character generation
+
 First, create a typical Chronicles of Darkness mortal character.
 5/4/3 stats, 11/7/4 skills +3 specializations, 7 merits. (+3 merits, for a total of 10, if you pick a supernatural template, which you most likely do.)
 
@@ -105,6 +106,8 @@ Hunters often gather in large organizations with access to powerful relics.
 Being a frail mortal that hunts vampires, werewolves, and other monsters is a sure way to get killed. Lack of planning, a single bad execution, one piece of wrong information, that's all it takes, and you're dead - or worse, one of them!
 
 * Heroes
+[[./heroes.png]]
+
 Heroes are mortals chosen by some power. Whether that power is a god, a cosmic accident, fate, or something dark, matters not. All are heroes regardless. The word "hero" might lead you to believe that you're destined for good - champion might be a better description in that regard. You've been chosen to act out the goals the powerful entity had in mind, even if those are evil.
 
 ** Hybris
@@ -439,6 +442,9 @@ Your character can not only use her Mastery Skill in extraordinarily difficult c
 *Effect*: Once per game session, the penalties to one roll using your character’s Mastery Skill become a bonus.
 
 * Equipment
+
+[[./equipment.png]]
+
 General rules for all weapons:
 
 /Dmg/: The additional successes added to any successful attack roll.
