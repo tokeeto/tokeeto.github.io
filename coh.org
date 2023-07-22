@@ -13,7 +13,6 @@
 
 Chronicles of heroes is a ruleset for a high fantasy setting for chronicles of darkness. The following is mostly a combination of Mirrors content, with added support for Mages (and other supernatural templates), as well as equipment and gear for aspiriring heroes.
 
-
 * Character generation
 
 First, create a typical Chronicles of Darkness mortal character.
@@ -108,7 +107,6 @@ Hunters are ordinary people with exceptional skills. They work in teams to fight
 Hunters often gather in large organizations with access to powerful relics.
 
 Being a frail mortal that hunts vampires, werewolves, and other monsters is a sure way to get killed. Lack of planning, a single bad execution, one piece of wrong information, that's all it takes, and you're dead - or worse, one of them!
-
 
 * Heroes
 
@@ -454,8 +452,6 @@ To create a mage charater, download the custom character sheet, but otherwise fo
 
 The full rules for a mage character will not be copied here, for obvious reasons.
 
-
-
 * Equipment
 
 #+ATTR_HTML: :width 100%
@@ -532,7 +528,6 @@ General rules for all weapons:
 ** TODO Tools
 No entries yet
 
-
 * Races
 You don't have to be a human, if you don't want to.
 
@@ -597,12 +592,11 @@ In addition, after acting out their vice, a dragonborn must roll Resolve + Compo
 
 ** TODO ???
 
-
 * Files
 
 [[./CoH_sheet.pdf][*Hero sheet*]]
 
-TODO [[./mage_sheet.pdf][*Mage sheet*]]
+[[./mage_sheet.pdf][*Mage sheet*]]
 
 
 * The story so far
