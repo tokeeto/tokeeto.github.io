@@ -1,14 +1,18 @@
 #+TITLE: Chronicles of Heroes
 #+EXPORT_FILE_NAME: index.html
 
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+
 #+OPTIONS: \n
 
+#+HTML_HEAD: <style> h3{clear:both;}</style>
+
+* Introduction
 #+ATTR_HTML: :width 100%
 [[./dragon_knight.png]]
 
-* Introduction
-Chronicles of heroes is a collection and clearification of rules, for playing with chronicles of darkness rules in a high fantasy setting.
+Chronicles of heroes is a ruleset for a high fantasy setting for chronicles of darkness. The following is mostly a combination of Mirrors content, with added support for Mages (and other supernatural templates), as well as equipment and gear for aspiriring heroes.
+
 
 * Character generation
 
@@ -105,7 +109,10 @@ Hunters often gather in large organizations with access to powerful relics.
 
 Being a frail mortal that hunts vampires, werewolves, and other monsters is a sure way to get killed. Lack of planning, a single bad execution, one piece of wrong information, that's all it takes, and you're dead - or worse, one of them!
 
+
 * Heroes
+
+#+ATTR_HTML: :width 100%
 [[./heroes.png]]
 
 Heroes are mortals chosen by some power. Whether that power is a god, a cosmic accident, fate, or something dark, matters not. All are heroes regardless. The word "hero" might lead you to believe that you're destined for good - champion might be a better description in that regard. You've been chosen to act out the goals the powerful entity had in mind, even if those are evil.
@@ -153,7 +160,7 @@ The player of a hero with at least one dot of Excellence can spend one Willpower
 |    8 |   5 |   5 |   5 |   4 |   3 |   3 |
 |   10 |   5 |   5 |   5 |   4 |   4 |   3 |
 
-** Masteries
+** TODO Masteries
 Masteries represent heroic excellence. A swords-man-hero with a one or two Weaponry Masteries is a potential d’Artangan or Musashi; one with more is a living god of the blade. The lesser Masteries include the plausible limits of human performance; greater ones are the realm of superhumans, such as the ability to forge steel with bare hands.
 
 Every hero begins with three Masteries at her first Excellence dot: one for each Skill. She may earn further Masteries across as many as six Skills, with the limit, per Skill and in total, determined by her total Excellence.
@@ -441,8 +448,17 @@ Your character can not only use her Mastery Skill in extraordinarily difficult c
 *Skill*: Any
 *Effect*: Once per game session, the penalties to one roll using your character’s Mastery Skill become a bonus.
 
+* TODO Mages
+
+To create a mage charater, download the custom character sheet, but otherwise follow the Mage: The Awakening book.
+
+The full rules for a mage character will not be copied here, for obvious reasons.
+
+
+
 * Equipment
 
+#+ATTR_HTML: :width 100%
 [[./equipment.png]]
 
 General rules for all weapons:
@@ -513,5 +529,97 @@ General rules for all weapons:
 /Defense/: Some armor is so heavy that you can't manouver as well, and as such gives a penalty to defense. Defense can't go below 0.
 
 
-** Tools
+** TODO Tools
 No entries yet
+
+
+* Races
+You don't have to be a human, if you don't want to.
+
+Other races either have distinct drawbacks and advantages, or a merit cost associated with them, to make up for the addtional perks.
+
+** TODO Elves
+
+#+ATTR_HTML: :style float:right;width:30%;margin:1em;
+[[./elf.png]]
+
+
+
+** Warforged
+
+#+ATTR_HTML: :style float:right;width:30%;margin:1em;
+[[./warforged.png]]
+
+Merit cost: 1
+
+*Reconfigure*:
+Once per session, a Warforged can spend 1 point of Willpower and 10 minutes of time altering their components to reconfigure their Attributes. Dots may be traded freely among the character’s Power, Finesse, and Resistance Attributes, though no Attribute may have a value of less than 1 or greater than 5.
+
+Once a warforged has used this feature their Attributes remain under the new configuration until this feature is used again.
+
+*Unhealing*:
+Warforged do not heal naturally. In order to recover lost Health, the warforged must repair themselves or seek out a skilled technician to perform repairs for them.
+
+#+ATTR_HTML: :style clear:both;
+#+begin_info
+*Repair*
+/Roll/: Intelligence + Crafts
+/Time/: 1 minute per bashing, 2 minutes per lethal, and 1 hour per aggravated damage that you attempt to repair.
+/Result/: Of the damage that you attempted to repair, you may heal 1 lethal and bashing per success or 1 aggravated for 2 successes.
+/Additional Success/: You may heal 1 more lethal or bashing for each 3 successes beyond your target.
+/Failure/: No result other than wasted time.
+/Dramatic failure/: Upgrade one of the damages that you attemptd to repair, one step. If you only attempted to repair aggravated damage, instead take a lethal damage.
+#+end_info
+
+** Dragonborn
+
+#+ATTR_HTML: :style float:right;width:30%;margin:1em;
+[[./dragonborn.png]]
+
+Dragonborn are descendents of dragons. They have a varied and magical lineage. All dragonborn represents one elemental dragon.
+
+*Scales*:
+Dragonborn have naturally hard scales, giving them a natural armor of 1/0. This feature also gives them an effective armor of 5/2 against the element associated with their color.
+
+*Heroic*:
+Dragonborn are trutworthy and noble by nature, but often also act this way to get rid of the suspiciousness that comes with looking like a dragon. Whenever a dragonborn acts against his virtue, he must roll a successful Resolve + Composure check or be compelled to act out his virtue.
+
+In addition, after acting out their vice, a dragonborn must roll Resolve + Composure. If they fail, they gain no willpower for indulging in their vice this scene.
+
+** TODO Dwarves
+
+#+ATTR_HTML: :style float:right;width:30%;margin:1em;
+[[./dwarf.png]]
+
+
+
+** TODO Gnomes
+
+** TODO ???
+
+
+* Files
+
+[[./CoH_sheet.pdf][*Hero sheet*]]
+
+TODO [[./mage_sheet.pdf][*Mage sheet*]]
+
+
+* The story so far
+The heroes defeated some bandits in their lair.
+
+The group got a few replacements, and went to help out in Lakeshire.
+
+The group got taken captive by the Dark Iron Dwarfs, allied with a lich.
+
+The lich turned the heroes into evil Death Knights.
+
+The "heroes" roamed the countryside for a bit.
+
+The heroes got beaten and captured by a group of paladins, led by Findus Banemand.
+
+The heroes got converted back into their living selves, but not all of them survived the conversion.
+
+The heroes, now with 2 new recruits, entered an infested building at the convenants behest.
+
+...
