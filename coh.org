@@ -535,9 +535,22 @@ Other races either have distinct drawbacks and advantages, or a merit cost assoc
 
 ** TODO Elves
 
-#+ATTR_HTML: :style float:right;width:30%;margin:1em;
+#+ATTR_HTML: :style float:right;width:30%;margin:1em;clear:both;
 [[./elf.png]]
 
+** Night elves:
+
+#+ATTR_HTML: :style float:right;width:30%;margin:1em;
+[[./elf_female.png]]
+
+*Nature afinity*:
+Gifted with a natural bond with nature, Night Elves receive a +1 bonus when interacting with nature, whether plants, weather or spirits related to those concepts. This, however, does not extend to knowledge about nature - only a direct interaction receive this bonus.
+
+*Night afinity*:
+Attuned with the moon and the darkness, Night Elves receive 8 again on stealth checks under direct moonlight. Night Elves also never receive penalties to vision while in moon light. Note that this does not extend to other light sources of similar brightness.
+
+*Naturalistic Morality*:
+Night elves have a strong connection to all things of nature, and cannot idle stand by while allowing the destruction of nature. If faced with a situation that could bring about destruction of a natural habitat, threaten a species or kill an endagered or rare animal, she must either spend a point of willpower to roll Resolve + Compsure, or be forced to intervene. This does not including felling trees for lumber or hunting ordinary, numerous animal, such as foxes, elk or birds, unless done to such a degree as to constitute deforestation or extirpation. But it does include dangerous animals, such as griffons or phelddagrifs.
 
 
 ** Warforged
@@ -588,7 +601,20 @@ In addition, after acting out their vice, a dragonborn must roll Resolve + Compo
 
 
 
-** TODO Gnomes
+** Gnomes
+
+#+ATTR_HTML: :style float:right;width:30%;margin:1em;
+[[./gnome_paladin.png]]
+
++1 merits
+
+*Obessed with technology*:
+Gnomes are tinkerers by nature. You receive a +2 bonus to skill checks related to tinkering with or reasoning about any exciting technology. (But not to knowledge about known tech, for example.)
+
+However, while doing so you easily lose track of time - whenever you're doing a tech-related test where time is a factor, roll Wits + Resolve. On a failure you spend double the time on the task. On a dramatic failure, you spend 3 times the original time.
+
+*Small*:
+Your size is 3. (This reduces your health)
 
 ** TODO ???
 
