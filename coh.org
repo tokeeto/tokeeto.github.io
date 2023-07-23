@@ -5,7 +5,16 @@
 
 #+OPTIONS: \n
 
-#+HTML_HEAD: <style> h3{clear:both;}</style>
+#+HTML_HEAD: <style>
+#+HTML_HEAD: @font-face {font-family: 'goudy'; src: url('./goudy.TTF') format('truetype');}
+#+HTML_HEAD: @font-face {font-family: 'goudy italic'; src: url('./goudy_italic.ttf') format('truetype');}
+#+HTML_HEAD: @font-face {font-family: 'goudy bold'; src: url('./goudy_bold.ttf') format('truetype');}
+#+HTML_HEAD: @font-face {font-family: 'bulkyRefuse'; src: url('./bulkyRefuse.ttf') format('truetype');}
+#+HTML_HEAD: h3{clear:both;}
+#+HTML_HEAD: table {width:100%}
+#+HTML_HEAD: h1, h2, h3, h4 {font-family: 'bulkyRefuse Type'}
+#+HTML_HEAD: </style>
+
 
 * Introduction
 #+ATTR_HTML: :style width:calc(100% + 100px);position:relative;left:-100px;
