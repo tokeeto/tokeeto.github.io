@@ -8,7 +8,7 @@
 #+HTML_HEAD: <style> h3{clear:both;}</style>
 
 * Introduction
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :style width:calc(100% + 100px);position:relative;left:-100px;
 [[./dragon_knight.png]]
 
 Chronicles of heroes is a ruleset for a high fantasy setting for chronicles of darkness. The following is mostly a combination of Mirrors content, with added support for Mages (and other supernatural templates), as well as equipment and gear for aspiriring heroes.
@@ -110,7 +110,7 @@ Being a frail mortal that hunts vampires, werewolves, and other monsters is a su
 
 * Heroes
 
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :style width:calc(100% + 100px);position:relative;left:-100px;
 [[./heroes.png]]
 
 Heroes are mortals chosen by some power. Whether that power is a god, a cosmic accident, fate, or something dark, matters not. All are heroes regardless. The word "hero" might lead you to believe that you're destined for good - champion might be a better description in that regard. You've been chosen to act out the goals the powerful entity had in mind, even if those are evil.
@@ -125,7 +125,7 @@ On the other end of the scale, you're fully aware that your powers and your huma
 
 ** Excellence
 Excellence, is a hero’s core supernatural trait and the source of her exceptional abilities. Heroes begin with one dot of Excellence.
-Further dots have a cost equal to the new rating x 8.
+Further dots costs 8 xp.
 
 Excellence has the following effects:
 
@@ -158,10 +158,10 @@ The player of a hero with at least one dot of Excellence can spend one Willpower
 |    8 |   5 |   5 |   5 |   4 |   3 |   3 |
 |   10 |   5 |   5 |   5 |   4 |   4 |   3 |
 
-** TODO Masteries
+** Masteries
 Masteries represent heroic excellence. A swords-man-hero with a one or two Weaponry Masteries is a potential d’Artangan or Musashi; one with more is a living god of the blade. The lesser Masteries include the plausible limits of human performance; greater ones are the realm of superhumans, such as the ability to forge steel with bare hands.
 
-Every hero begins with three Masteries at her first Excellence dot: one for each Skill. She may earn further Masteries across as many as six Skills, with the limit, per Skill and in total, determined by her total Excellence.
+Every hero begins with three Masteries at her first Excellence dot: one for each Skill. She may earn further Masteries across as many as six Skills, with the limit, per Skill and in total, determined by her total Excellence. New Masteries costs 6 xp.
 
 A character must be competent at a Skill to acquire its Masteries. She must possess one dot more in the Skill than the number of Masteries she aspires to, so that a character seeking her fourth Crafts Mastery requires five dots in that Skill. Some Masteries also have additional requirements. These are noted in the Mastery’s description.
 A few Masteries are restricted to certain Skills, while others might apply to any of them. If a Mastery applies to multiple Skills, the hero’s player must devote one Mastery “slot” for every Skill to which he wishes to apply that Mastery.
@@ -446,15 +446,18 @@ Your character can not only use her Mastery Skill in extraordinarily difficult c
 *Skill*: Any
 *Effect*: Once per game session, the penalties to one roll using your character’s Mastery Skill become a bonus.
 
-* TODO Mages
+* Mages
 
-To create a mage charater, download the custom character sheet, but otherwise follow the Mage: The Awakening book.
+#+ATTR_HTML: :style width:calc(100% + 100px);position:relative;left:-100px;
+[[./mage.png]]
+
+To create a mage charater, download the custom character sheet from the files tab, but otherwise follow the Mage: The Awakening book.
 
 The full rules for a mage character will not be copied here, for obvious reasons.
 
 * Equipment
 
-#+ATTR_HTML: :width 100%
+#+ATTR_HTML: :style width:calc(100% + 100px);position:relative;left:-100px;
 [[./equipment.png]]
 
 General rules for all weapons:
@@ -510,23 +513,66 @@ General rules for all weapons:
 
 ** Armor
 
-| Name        | Armor | Defense | Availability | Notes |
-|-------------+-------+---------+--------------+-------|
-| Leather     | 1/0   |       0 |              |       |
-| Studded     | 1/1   |      -1 | ●            |       |
-|             |       |         |              |       |
-| Chain       | 2/1   |      -1 | ●●          |       |
-|             |       |         |              |       |
+| Name        | Armor | Defense | Availability | Notes    |
+|-------------+-------+---------+--------------+----------|
+| Leather     | 1/0   |       0 |              |          |
+| Studded     | 1/1   |      -1 | ●            |          |
+|             |       |         |              |          |
+| Chain       | 2/1   |      -1 | ●●          |          |
+|             |       |         |              |          |
 | Plate, full | 2/4   |      -4 | ●●●●      | -3 speed |
-| Plate, half | 2/2   |      -2 | ●●●        |-1 speed |
-|             |       |         |              |       |
+| Plate, half | 2/2   |      -2 | ●●●        | -1 speed |
+|             |       |         |              |          |
 
 /Armor/: First number denotes number of damage that will be downgraded from lethal to bashing, second number denotes number of damage that will be ignored. Armor will ignore the most lethal damage first.
 /Defense/: Some armor is so heavy that you can't manouver as well, and as such gives a penalty to defense. Defense can't go below 0.
 
 
-** TODO Tools
-No entries yet
+** Tools
+
+Tools normally give their Rating as a bonus to the task they're made to fulfill. Sometimes they just straight up enable it at all (suck as lockpicks/lockpicking, which cannot performed without tools).
+
+| Name               | Rating        | Availability |
+|--------------------+---------------+--------------|
+| Climbing gear      | ● or ●●●   | None or ●    |
+| Crowbar            | ●●           |              |
+| Potion of healing  |               | ●            |
+| Tent               | ● to ●●●● |              |
+| Navigational tools | ●●           | ●            |
+| Healing kit        | ●             |              |
+| Hourglass          | ● to ●●●   | ●●●        |
+| Hunting gear       | ● to ●●●   |              |
+| Artisan tools      | ●●           |              |
+|                    |               |              |
+
+*Climbing gear*:
+A set of rope and hooks to ease the scaling of walls. The advanced version is created for a specific surface, such as rocks or castle walls, and comes with a small crossbow-like device to fire a hook into the surface, as well as safety mechanisms that allows the user to let go without falling down.
+
+*Crowbar*:
+A simble bar of metal made specificly for prying open stuff. Really good for stuff that's doesn't want to give away it's riches.
+
+*Potion of healing*:
+Boosts the metabolism through magic and alchemy. Downgrades one lethal damage to bashing.
+
+*Tent*:
+For the outdoorsman of all ages. Comes in a varity of versions, from the plastic sheet that just keeps rain away, to the small transportable hut, that requires no less than 4 servants to carry and set up. The rating counts against any penalty from the surrounding environment.
+
+*Navigational tools*:
+While every scrub can carry a map, only a skilled navigator can find his way back when he is truly lost. Compass, sixtant, star charts all included.
+
+*Healing kit*:
+Allows for the skilled physician to carry on his duties while travelling. Warning: Healing Kit does not give you skills needed to wield a scalpel, and under no circumstances should you ask random passerbys to perform emergency surgeries on you. Warranty does not cover ganggreen, loss of limbs or death.
+
+*Hourglass*:
+For the gentleman that never wants to be late. Timekeeping is a science, and one that you can now be proficent at.
+Comes in a few varities, depending on ease of use and precision.
+
+*Hunting gear*:
+Provides it's rating as a bonus to hunt for food.
+
+*Artisan tools*:
+Tools of the trade - whether wood working, fletching, skinning, tanning, carpentry or something else. Enables the work, as well as provides its rating as a bonus.
+
 
 * Races
 You don't have to be a human, if you don't want to.
@@ -594,12 +640,19 @@ Dragonborn are trutworthy and noble by nature, but often also act this way to ge
 
 In addition, after acting out their vice, a dragonborn must roll Resolve + Composure. If they fail, they gain no willpower for indulging in their vice this scene.
 
-** TODO Dwarves
+** Dwarves
 
 #+ATTR_HTML: :style float:right;width:30%;margin:1em;
 [[./dwarf.png]]
 
+*Clan*:
+Most dwarves have strong family ties. This results in a free Status 2 (clan) merit, to reflect the connection to the clan. However, the clan might also call for support. Unlike the normal status merit, breaking off the clan status might have severe consequences as the dwarf becomes a pariah, and might even be assasinated in extreme cases.
 
+*Strong body*:
+Dwarves gets a free point of stamina.
+
+*Small body*:
+Dwarves have size 3
 
 ** Gnomes
 
@@ -626,6 +679,10 @@ Your size is 3. (This reduces your health)
 
 
 * The story so far
+
+#+ATTR_HTML: :style width:calc(100% + 100px);position:relative;left:-100px;
+[[./book.png]]
+
 The heroes defeated some bandits in their lair.
 
 The group got a few replacements, and went to help out in Lakeshire.
