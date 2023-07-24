@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cluedo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html {
+			font-family: arial;
+			font-size: 18px;
+		}
+		table {
+			width: 100%;
+			margin-bottom: 2em;
+		}
+		table th {
+			background-color: #444;
+			color: white;
+			font-size: 22px;
+			padding: .2em;
+		}
+		th label {
+			position: absolute;
+			right: 10px;
+			font-size: 14px;
+			padding-right: 25px;
+		}
+		.suspects th {
+			background-color: darkred;
+		}
+		.weapons th {
+			background-color: darkgreen;
+		}
+		.rooms th {
+			background-color: darkblue;
+		}
+		table td {
+			position: relative;
+			padding: .3em;
+			width: 50%;
+		}
+		tr:nth-child(2n+1) td:nth-child(2n+1){
+			background-color: #aaa;
+		}
+		tr:nth-child(2n) td:nth-child(2n){
+			background-color: #aaa;
+		}
+		.check_container {
+			display: inline-block;
+			position: absolute;
+			right: 10px;
+		}
+		.item_notes {
+			width: 95%;
+		}
+		.notes {
+			display: none;
+		}
+		textarea {
+			width: 100%;
+		}
+		h1 {
+			text-align: center;
+			font-family: 'Permanent Marker', cursive;
+			font-weight: bold;
+			font-size: 40px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onbeforeunload = function() {
+			return true;
+		};
+		function toggle_extra(){
+			var check = document.getElementById("extra");
+			var value = check.checked;
+			var notes = document.getElementsByClassName('notes');
+			for (element of notes){
+				if (value){
+					element.style.display = 'inline-block';
+					if (element.tagName == 'TABLE'){
+						element.style.display = 'table';
+					}
+				} else {
+					element.style.display = 'none';
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+
+<h1>Cluedo</h1>
+
+<table class="suspects">
+	<tr>
+		<th colspan="2" >Mistænkte <label>Vis extra felter <input id="extra" type="checkbox" onclick="toggle_extra()"></label></th>
+	</tr>
+	<tr>
+		<td>
+			<label for="check_gul">Oberts Senepsgul</label>
+			<div class="check_container">
+				<input id="check_gul" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+			<label for="check_lilla">Professor Blomme</label>
+			<div class="check_container">
+				<input id="check_lilla" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="check_grøn">Pastor Grøn</label>
+			<div class="check_container">
+				<input id="check_grøn" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+			<label for="check_blå">Fru Påfugleblå</label>
+			<div class="check_container">
+				<input id="check_blå" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label for="check_rod">Frk. Purpurrød</label>
+			<div class="check_container">
+				<input id="check_rod" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+			<label for="check_hvid">Fru Hvid</label>
+			<div class="check_container">
+				<input id="check_hvid" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+</div>
+
+<table class="weapons">
+	<tr>
+		<th colspan="2">Våben</th>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Dolk">Dolk</label>
+			<div class="check_container">
+				<input id="check_Dolk" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+				<label for="check_Lysestage">Lysestage</label>
+			<div class="check_container">
+				<input id="check_Lysestage" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Revolver">Revolver</label>
+			<div class="check_container">
+				<input id="check_Revolver" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+				<label for="check_Reb">Reb</label>
+			<div class="check_container">
+				<input id="check_Reb" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Jernrør">Jernrør</label>
+			<div class="check_container">
+				<input id="check_Jernrør" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+				<label for="check_Skruenøgle">Skruenøgle</label>
+			<div class="check_container">
+				<input id="check_Skruenøgle" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+</table>
+
+<table class="rooms">
+	<tr>
+		<th colspan="2">Værelser</th>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Forhal">Forhal</label>
+			<div class="check_container">
+				<input id="check_Forhal" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+				<label for="check_Opholdsstue">Opholdsstue</label>
+			<div class="check_container">
+				<input id="check_Opholdsstue" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Spisestue">Spisestue</label>
+			<div class="check_container">
+				<input id="check_Spisestue" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+				<label for="check_køkken">køkken</label>
+			<div class="check_container">
+				<input id="check_køkken" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Balsal">Balsal</label>
+			<div class="check_container">
+				<input id="check_Balsal" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+				<label for="check_Vinterhave">Vinterhave</label>
+			<div class="check_container">
+				<input id="check_Vinterhave" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Billardværelse">Billardværelse</label>
+			<div class="check_container">
+				<input id="check_Billardværelse" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td>
+				<label for="check_Bibliotek">Bibliotek</label>
+			<div class="check_container">
+				<input id="check_Bibliotek" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+	</tr>
+	<tr>
+		<td>
+				<label for="check_Arbejdsværelse">Arbejdsværelse</label>
+			<div class="check_container">
+				<input id="check_Arbejdsværelse" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+				<input class="notes" type="checkbox">
+			</div>
+			<br>
+			<input type="text" class="notes item_notes" name="">
+		</td>
+		<td></td>
+	</tr>
+</table>
+
+<table class="notes" style="width: 100%;">
+	<tr>
+		<th>Noter</th>
+	</tr>
+	<tr>
+		<td style="width: 100%;">
+			<textarea></textarea>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
