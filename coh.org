@@ -13,6 +13,7 @@
 #+HTML_HEAD: h3{clear:both;}
 #+HTML_HEAD: table {width:100%}
 #+HTML_HEAD: h1, h2, h3, h4 {font-family: 'bulkyRefuse Type'}
+#+HTML_HEAD: h1 { text-align: center; }
 #+HTML_HEAD: </style>
 
 
@@ -22,7 +23,11 @@
 
 Chronicles of heroes is a ruleset for a high fantasy setting for chronicles of darkness. The following is mostly a combination of Mirrors content, with added support for Mages (and other supernatural templates), as well as equipment and gear for aspiriring heroes.
 
-* Character generation
+This page is meant to be a quick lookup for resources on how to build your character, but if you read Chronicles of Darkness (or the relevant book for your supernatural species) you already know how to do it.
+
+Also, these pages don't really explain many of the mechanics, so you need the Chronicles of Darkness book anyway. This is just a reference card.
+
+* Characters
 
 First, create a typical Chronicles of Darkness mortal character.
 5/4/3 stats, 11/7/4 skills +3 specializations, 7 merits. (+3 merits, for a total of 10, if you pick a supernatural template, which you most likely do.)
@@ -43,13 +48,20 @@ Just like with attributes, you determine which group you'll spend each of the th
 ** Specialization
 Skill specializations are just another skill dot, that only applies under specific circumstances. This should be narrow enough that it doesn't always apply, but general enough that it often applies. Think of it as "they way you do the thing that you do" - "swords" could be a good specialization for "weaponry", "combat" could be a specialization for "ride", "arcane" could be a specialization for "occult". It should be the way that you think you're going to be using your skill.
 
-** TODO Merits
+** Merits
 There are a TON of merits for you to take. Merits are all the details about your characters life that might be benificial during play. A character could be rich, but with all their assets being locked away in another kingdom. That's not a merit - however, having near-instant access to amazing wealth IS a merit (namely, "resources").
 
 Merits cover everything from superior genes, to learned skills such as fighting styles or special education, to social standings, to generational wealth, to fate just smiling upon you.
 
-I've included a set of merits here, but the list is by no means exhaustive.
+Here's [[https://whitewolf.fandom.com/wiki/List_of_Merits_(Storytelling_System)#cite_note-wod112-52][a list]] - do not that's MANY merits to take, and not all of them are equally fitting for you, though all are beneficial. So instead, try to work out what you want for your character, and then find the fitting merit.
 
+Some good questions to ask:
+What is a unique trait to your character? If people asked about "do you know Tim?" would they ask "the guy with the big mansion?" or "the karate guy?"
+Is money almost part of your personality? Horses? The time you spent on that island?
+
+Generally mertis comes in ranks 1 to 5. 1 is a unique, but minor aspect of your character, such as better eyes, fantastic memory, etc. 5 makes you famous world wide for having that trait - not neccesarily to everyone, and some traits are about not being known, but 5 ranks in a martial art makes you a master, for instance. 5 ranks in resources makes you a proper millionaire. 3 would be something that people close to you, absolutely know about you "Oh, Jim is in the army, you could blindfold him and drop him off anywhere and he would be fine waiting 3 days before finding his way back home."
+
+Some merits are genetic, such as better looks, good memory, being tall or big, having good health, etc. Some are about experiences, such as jobs, skills, training. Some are about social connections and resources that you have - friends, family, organizations.
 
 
 ** Meet the Supernaturals
