@@ -7,8 +7,8 @@
   <style type="text/css">
     #container {
       display: inline-block;
-      width:600px;
-      height:600px;
+      width:700px;
+      height:700px;
     }
     .input-group {
       width: 19%;
@@ -16,6 +16,7 @@
       display: inline-block;
       margin: 0;
       box-sizing: border-box;
+      border-top: 2px solid;
     }
     .input-group input{
       width: 100%;
@@ -25,48 +26,57 @@
       font-size: 16px;
       margin-top: .3em;
     }
-    .input-group input:nth-child(1){
+    .input-group input:nth-child(2){
       text-align: center;
       font-size: 22px;
+    }
+    .input-group h3 {
+      font-family: sans-serif;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <div class="input-group">
-    <input type="number" min=0 max=10 data-index=0 onkeyup="setValue(this)" onchange="setValue(this)" >
+  <div class="input-group" value="1" style="border-color: rgb(255, 99, 132)">
+    <h3 style="color: rgb(255, 99, 132)">Kommunikation</h3>
+    <input class="number" type="number" min=0 max=10 data-index=0 onkeyup="setValue(this)" onchange="setValue(this)" >
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
   </div>
-  <div class="input-group">
-    <input type="number" min=0 max=10 data-index=1 onkeyup="setValue(this)" onchange="setValue(this)">
+  <div class="input-group" value="1" style="border-color: rgb(54, 162, 235)">
+    <h3 style="color: rgb(54, 162, 235)">Sociale evner</h3>
+    <input class="number" type="number" min=0 max=10 data-index=1 onkeyup="setValue(this)" onchange="setValue(this)">
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
   </div>
-  <div class="input-group">
-    <input type="number" min=0 max=10 data-index=2 onkeyup="setValue(this)" onchange="setValue(this)">
+  <div class="input-group" value="1" style="border-color: rgb(255, 205, 86)">
+    <h3 style="color: rgb(255, 205, 86)">Særinteresser</h3>
+    <input class="number" type="number" min=0 max=10 data-index=2 onkeyup="setValue(this)" onchange="setValue(this)">
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
   </div>
-  <div class="input-group">
-    <input type="number" min=0 max=10 data-index=3 onkeyup="setValue(this)" onchange="setValue(this)">
+  <div class="input-group" value="1" style="border-color: rgb(54, 190, 54)">
+    <h3 style="color: rgb(54, 190, 54)">Rutiner og gentagelse</h3>
+    <input class="number" type="number" min=0 max=10 data-index=3 onkeyup="setValue(this)" onchange="setValue(this)">
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
     <input class="text">
   </div>
-  <div class="input-group">
-    <input type="number" min=0 max=10 data-index=4 onkeyup="setValue(this)" onchange="setValue(this)">
+  <div class="input-group" value="1" style="border-color: rgb(180, 54, 180)">
+    <h3 style="color: rgb(180, 54, 180)">Sanseoverfølsomhed</h3>
+    <input class="number" type="number" min=0 max=10 data-index=4 onkeyup="setValue(this)" onchange="setValue(this)">
     <input class="text">
     <input class="text">
     <input class="text">
@@ -87,14 +97,14 @@
 
     let data = {
       labels: [
-        'Red',
-        'Blue',
-        'Yellow',
-        'Green',
-        'Purple',
+        'Kommunikation',
+        'Sociale evner',
+        'Særinteresser',
+        'Rutiner og gentagelse',
+        'Sanseoverfølsomhed'
       ],
       datasets: [{
-        label: 'My First Dataset',
+        label: '',
         data: [0,0,0,0,0],
         backgroundColor: [
           'rgb(255, 99, 132)',
@@ -104,12 +114,24 @@
           'rgb(180, 54, 180)'
         ],
         hoverOffset: 4
-      }]
+      }],
     };
 
     const config = {
-      type: 'doughnut',
+      type: 'polarArea',
       data: data,
+      options: {
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
+        scales: {
+          rAxis: {
+            max: 10
+          }
+        }
+      }
     };
 
     var chart = new Chart(ctx, config);
@@ -120,6 +142,11 @@
       data.datasets[0].data[index] = parseFloat(element.value);
       chart.update();
     }
+
+    for(var e of document.getElementsByClassName("number")) {
+      setValue(e);
+    }
+
   </script>
 
 </body>
