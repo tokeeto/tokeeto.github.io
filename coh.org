@@ -136,11 +136,11 @@ Being a frail mortal that hunts vampires, werewolves, and other monsters is a su
 
 Heroes are mortals chosen by some power. Whether that power is a god, a cosmic accident, fate, or something dark, matters not. All are heroes regardless. The word "hero" might lead you to believe that you're destined for good - champion might be a better description in that regard. You've been chosen to act out the goals the powerful entity had in mind, even if those are evil.
 
-** Hybris
-All heroes struggle with hybris. Being so much better than anyone else means that you are in danger of losing your grasp on reality and your connection with the world around you.
-Whenever you do something awesome, that lesser men would be unable to, you roll for hybris. On a failure, you lose 1 hybris, and is closer to losing your sense of self.
+** Hubris
+All heroes struggle with hubris. Being so much better than anyone else means that you are in danger of losing your grasp on reality and your connection with the world around you.
+Whenever you do something awesome, that lesser men would be unable to, you roll for hubris. On a failure, you lose 1 hubris, and is closer to losing your sense of self.
 
-If your hybris ever hits 1, you become an npc that will take on any challenge, and take everything to the extreme. Hear of somebody having their wallet stolen? Vow to neither eat nor sleep, until you've removed crimed from this world!
+If your hubris ever hits 1, you become an npc that will take on any challenge, and take everything to the extreme. Hear of somebody having their wallet stolen? Vow to neither eat nor sleep, until you've removed crimed from this world! Somebody died? You'll travel to hell yourself, to bring them back! Saw a bear in the forest? Challenge the bear God to a duel!
 
 On the other end of the scale, you're fully aware that your powers and your human side just so happen to coexist, but even something as ordinary as being good at a job, might make you question where your human ends, and the champion begins.
 
