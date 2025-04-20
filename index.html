@@ -5,16 +5,16 @@
         <title></title>
         <style type="text/css">
             @page {
-                // change this to fit your paper size
-                // options are: A3, A4, A5, letter, legal, ledger, B4, B5
+                /* change this to fit your paper size */
+                /* options are: A3, A4, A5, letter, legal, ledger, B4, B5 */
                 size: A4;
-                // change this line if you need more margin on the paper
+                /* change this line if you need more margin on the paper */
                 margin: 1.1em;
             }
             html,
             body {
-                // This is the preview width and height. No need to change this, even
-                // if you change the paper size.
+                /* This is the preview width and height. No need to change this, even*/
+                /* if you change the paper size.*/
                 width: 210mm;
                 height: 297mm;
             }
@@ -24,9 +24,9 @@
                 display: inline-block;
                 overflow: hidden;
                 background-position: center;
-                // If your card images do not have bleed, use this line instead:
-                // background-size: 63.5mm, 88mm;
-                // and remove this line (remember to do the same down below):
+                /* If your card images do not have bleed, use this line instead:*/
+                /* background-size: 63.5mm, 88mm;*/
+                /* and remove this line (remember to do the same down below):*/
                 background-size: calc(63.5mm + 6.35mm), calc(88mm + 8.8mm);
                 border-radius: 0.5em;
                 margin-right: 0.3em;
@@ -35,9 +35,9 @@
             .card.land {
                 height: 63.5mm;
                 width: 88mm;
-                // If your card images do not have bleed, use this line instead:
-                // background-size: 88mm, 63.5mm;
-                // and remove this line (remember to do the same above):
+                /* If your card images do not have bleed, use this line instead: */
+                /* background-size: 88mm, 63.5mm; */
+                /* and remove this line (remember to do the same above): */
                 background-size: calc(88mm + 8.8mm), calc(63.5mm + 6.35mm);
             }
             .drop-zone {
@@ -59,10 +59,15 @@
                 margin: 0 auto 30px auto;
                 line-height: 1.6;
             }
+            .author {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+            }
             @media print {
                 .drop-zone,
                 .instructions,
-                .print-button {
+                .author {
                     display: none;
                 }
             }
@@ -80,6 +85,11 @@
         <div class="drop-zone" id="dropZone">
             <h2>Drop Images Here</h2>
             <p>Or drop them anywhere on the page</p>
+        </div>
+        <div class="author">
+            Made by Tokeeto. You can support me on
+            <a href="https://ko-fi.com/tokeeto">Ko-fi</a> or
+            <a href="https://www.patreon.com/tokeeto">Patreon</a>.
         </div>
     </body>
 
