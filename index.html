@@ -127,11 +127,24 @@
         }
 
         function processFiles(files) {
+            console.log(files);
+
+            // Get current children to maintain their order
+            const container = document.getElementById("imageContainer");
+            const existingCards = Array.from(container.children);
+
+            // Create an array to store promises for each file
+            const filePromises = [];
+
+            // Process each file and create a promise for it
             for (let i = 0; i < files.length; i++) {
                 const file = files[i];
 
-                // Check if file is an image
-                if (file.type.match("image.*")) {
+                // Skip non-image files
+                if (!file.type.match("image.*")) continue;
+
+                // Create a promise for this file
+                const filePromise = new Promise((resolve) => {
                     const reader = new FileReader();
 
                     reader.onload = function (e) {
@@ -149,15 +162,47 @@
 
                             card.style.backgroundImage = `url('${e.target.result}')`;
 
-                            document
-                                .getElementById("imageContainer")
-                                .appendChild(card);
+                            // Resolve the promise with the card element and its original index
+                            resolve({ element: card, index: i });
+                        };
+
+                        img.onerror = function () {
+                            // Handle image loading error
+                            resolve({ element: null, index: i });
                         };
                     };
 
+                    reader.onerror = function () {
+                        // Handle file reading error
+                        resolve({ element: null, index: i });
+                    };
+
                     reader.readAsDataURL(file);
-                }
+                });
+
+                filePromises.push(filePromise);
             }
+
+            // When all images are loaded (regardless of order)
+            Promise.all(filePromises).then((results) => {
+                // Sort results by their original index
+                results.sort((a, b) => a.index - b.index);
+
+                // Clear container while saving existing cards
+                container.innerHTML = "";
+
+                // First, re-add all existing cards
+                existingCards.forEach((card) => {
+                    container.appendChild(card);
+                });
+
+                // Then add new cards in their original order
+                results.forEach((result) => {
+                    if (result.element) {
+                        container.appendChild(result.element);
+                    }
+                });
+            });
         }
     </script>
 </html>
